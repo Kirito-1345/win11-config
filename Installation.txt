@@ -1,60 +1,120 @@
-scoop
+#  Installation Guide
+---
+
+## 1. Scoop (Package Manager)
+
+```powershell
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
+```
 
-git
+---
+
+## 2. Git
+
+```powershell
 winget install --id Git.Git -e --source winget
+```
 
-yasb
+---
+
+## 3. YASB (Status Bar)
+
+```powershell
 winget install --id AmN.yasb
+```
 
-flow launcher
+> Konfiguration liegt in `yasb widget.txt und yasb styles.txt` — Inhalt in die YASB-Konfigdatei kopieren.
+
+---
+
+## 4. Flow Launcher
+
+```powershell
 winget install "Flow Launcher"
+```
 
-cava
+---
+
+## 5. Cava (Audio Visualizer)
+
+```powershell
 winget install karlstav.cava
+```
 
-yazi
+Tutorial: https://www.youtube.com/watch?v=Ehnj5fzWegY
+
+---
+
+## 6. Yazi (Terminal File Manager)
+
+```powershell
+# Yazi selbst
 winget install sxyazi.yazi
+
+# Abhängigkeiten
 winget install Gyan.FFmpeg 7zip.7zip jqlang.jq oschwartz10612.Poppler sharkdp.fd BurntSushi.ripgrep.MSVC junegunn.fzf ajeetdsouza.zoxide ImageMagick.ImageMagick
+
+# file.exe Pfad setzen (für aktuellen Nutzer)
 setx YAZI_FILE_ONE "C:\Program Files\Git\usr\bin\file.exe"
+
+# Für alle Nutzer (erfordert Admin)
 setx YAZI_FILE_ONE "C:\Program Files\Git\usr\bin\file.exe" /M
-sudo  setx YAZI_FILE_ONE "C:\Program Files\Git\usr\bin\file.exe" /M
+```
 
+---
 
-winget install BurntSushi.ripgrep.MSVC
+## 7. Shell-Erweiterungen
 
-auto complete
+### Autocomplete (PSReadLine)
+
+```powershell
 Install-Module -Name PSReadLine -AllowClobber -Force
+```
 
+### yt-dlp + FFmpeg
+
+```powershell
 winget install yt-dlp
+winget install Gyan.FFmpeg
+```
 
-winget install Gyan.FFmpeg 7zip.7zip jqlang.jq ajeetdsouza.zoxide ImageMagick.ImageMagick
+### fzf (Fuzzy Finder)
 
-fzf
+```powershell
 winget install -e --id junegunn.fzf
+```
 
-fastfetch
+### Fastfetch
+
+```powershell
 scoop install fastfetch
+```
 
-windhawk
-https://windhawk.net/
-plugins shonw in windhawk folder 
+ Terminal & Fastfetch Tutorial: https://www.youtube.com/watch?v=z3NpVq-y6jU
 
-catpuccin configs
+---
+
+## 8. Windhawk (UI Mods)
+
+1. Herunterladen von: https://windhawk.net/
+2. Installieren und öffnen
+3. Die Plugins aus dem `windhawk/` Ordner importieren
+
+---
+
+## 9. Catppuccin Theme
+
+Vollständige Anleitung von @SleepyCatHey:
 https://github.com/SleepyCatHey/Ultimate-Win11-Setup
 
-fluent flyout
-https://fluentflyout.com/download/
-config shown in flyout folder
+---
 
-if needed
+## 10. Fluent Flyout
 
-terminal customize tutorial and fastfetch
-https://www.youtube.com/watch?v=z3NpVq-y6jU&t=1s
+1. Herunterladen von: https://fluentflyout.com/download/
+2. Konfiguration aus dem `flyout/` Ordner übernehmen
 
-fluent flyout
-https://www.youtube.com/watch?v=44gS79FdtIg&t=1s
+ Tutorial: https://www.youtube.com/watch?v=44gS79FdtIg
 
-cava
-https://www.youtube.com/watch?v=Ehnj5fzWegY&t=10s
+---
