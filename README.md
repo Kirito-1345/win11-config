@@ -16,7 +16,7 @@ Credits for the installation tutorial and Catppuccin config go to [@SleepyCatHey
 | `wallpapers/` | Wallpapers used in the setup |
 | `styles.txt` | Custom styles / CSS overrides |
 | `yasb widget.txt` | YASB status bar widget config |
-| `Installation.txt` | Step-by-step install guide |
+| `Installation.txt` | install guide for all the tool and apps |
 
 ---
 
