@@ -1,0 +1,60 @@
+scoop
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
+
+git
+winget install --id Git.Git -e --source winget
+
+yasb
+winget install --id AmN.yasb
+
+flow launcher
+winget install "Flow Launcher"
+
+cava
+winget install karlstav.cava
+
+yazi
+winget install sxyazi.yazi
+winget install Gyan.FFmpeg 7zip.7zip jqlang.jq oschwartz10612.Poppler sharkdp.fd BurntSushi.ripgrep.MSVC junegunn.fzf ajeetdsouza.zoxide ImageMagick.ImageMagick
+setx YAZI_FILE_ONE "C:\Program Files\Git\usr\bin\file.exe"
+setx YAZI_FILE_ONE "C:\Program Files\Git\usr\bin\file.exe" /M
+sudo  setx YAZI_FILE_ONE "C:\Program Files\Git\usr\bin\file.exe" /M
+
+
+winget install BurntSushi.ripgrep.MSVC
+
+auto complete
+Install-Module -Name PSReadLine -AllowClobber -Force
+
+winget install yt-dlp
+
+winget install Gyan.FFmpeg 7zip.7zip jqlang.jq ajeetdsouza.zoxide ImageMagick.ImageMagick
+
+fzf
+winget install -e --id junegunn.fzf
+
+fastfetch
+scoop install fastfetch
+
+windhawk
+https://windhawk.net/
+plugins shonw in windhawk folder 
+
+catpuccin configs
+https://github.com/SleepyCatHey/Ultimate-Win11-Setup
+
+fluent flyout
+https://fluentflyout.com/download/
+config shown in flyout folder
+
+if needed
+
+terminal customize tutorial and fastfetch
+https://www.youtube.com/watch?v=z3NpVq-y6jU&t=1s
+
+fluent flyout
+https://www.youtube.com/watch?v=44gS79FdtIg&t=1s
+
+cava
+https://www.youtube.com/watch?v=Ehnj5fzWegY&t=10s
