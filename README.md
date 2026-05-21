@@ -21,7 +21,7 @@ Credits for the installation tutorial and Catppuccin config go to [@SleepyCatHey
 ---
 
 ##  Installation
-everything that you need is documented in installation.txt
+- everything that you need is documented in installation.txt
 ---
 ##  Video Guides
 
